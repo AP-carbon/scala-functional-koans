@@ -1,7 +1,7 @@
-package org.scalakoans
+package functionalscalakoans
 
-import org.scalakoans.support.KoanSuite
-import org.scalakoans.support.BlankValues._
+import functionalscalakoans.support.BlankValues._
+import functionalscalakoans.support.KoanSuite
 
 class AboutImmutableIndexedSequences extends KoanSuite {
 

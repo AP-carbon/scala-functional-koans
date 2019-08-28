@@ -1,9 +1,9 @@
-package org.scalakoans
-
-import org.scalakoans.support.KoanSuite
-import org.scalakoans.support.BlankValues._
+package functionalscalakoans
 
 import java.util.NoSuchElementException
+
+import functionalscalakoans.support.BlankValues._
+import functionalscalakoans.support.KoanSuite
 
 class AboutImmutableMaps extends KoanSuite {
 

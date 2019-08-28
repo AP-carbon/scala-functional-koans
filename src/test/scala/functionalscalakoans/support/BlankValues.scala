@@ -1,4 +1,4 @@
-package org.scalakoans.support
+package functionalscalakoans.support
 
 import org.scalatest.exceptions.TestPendingException
 import org.scalatest.matchers.Matcher

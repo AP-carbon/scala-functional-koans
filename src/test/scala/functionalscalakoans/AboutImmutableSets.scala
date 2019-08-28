@@ -1,11 +1,11 @@
-package org.scalakoans
+package functionalscalakoans
 
-import org.scalakoans.support.KoanSuite
-import org.scalakoans.support.BlankValues._
+import functionalscalakoans.support.BlankValues._
+import functionalscalakoans.support.KoanSuite
 
 class AboutImmutableSets extends KoanSuite {
 
-  koan("Set behave like a function returning a boolean") {
+  koan("Set behaves like a function returning a boolean") {
     val ids = Set(1, 2, 3)
 
     ids(1) should be (__)

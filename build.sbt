@@ -1,9 +1,8 @@
-addCommandAlias("namaste", "~testOnly org.scalakoans.Koans")
+addCommandAlias("namaste", "~testOnly functionalscalakoans.Koans")
 
 lazy val root = (project in file("."))
   .settings(
     name := "scala-functional-koans",
-    organization := "org.scalakoans",
     version := "0.1",
 
     scalaVersion := "2.11.12",
