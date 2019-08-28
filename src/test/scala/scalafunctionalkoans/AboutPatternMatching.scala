@@ -116,11 +116,11 @@ class AboutPatternMatching extends KoanSuite {
   koan("Pattern matching can match case class hierarchy") {
     // Let's model an expression.
     // It can be a simple value, the sum of two expressions, or the product of two expressions.
-    trait Expression
+    sealed trait Expression extends Product with Serializable
     // Think of `trait` in Scala as a more advanced kind of `interface` in Java
-    case class Const(value: Int) extends Expression
-    case class Add(a: Expression, b: Expression) extends Expression
-    case class Multiply(a: Expression, b: Expression) extends Expression
+    final case class Const(value: Int) extends Expression
+    final case class Add(a: Expression, b: Expression) extends Expression
+    final case class Multiply(a: Expression, b: Expression) extends Expression
 
     def compute(expr: Expression): Int = expr match {
       case Const(value) => value
