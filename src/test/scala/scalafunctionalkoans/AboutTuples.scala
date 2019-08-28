@@ -49,9 +49,9 @@ class AboutTuples extends KoanSuite {
   koan("Tuples can be matched in assignements") {
     val tuple = ("cat", 5)
 
-    val (specy, age) = tuple
+    val (species, age) = tuple
 
-    specy should be (__)
+    species should be (__)
     age should be (__)
   }
 }

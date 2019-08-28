@@ -6,7 +6,7 @@ import scalafunctionalkoans.support.KoanSuite
 /*
 RANGES
 
-Ranges are very usefull when used with `for`.
+Ranges are very useful when used with `for`.
 */
 class AboutRanges extends KoanSuite {
 
