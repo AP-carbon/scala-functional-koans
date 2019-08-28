@@ -1,7 +1,7 @@
-package functionalscalakoans
+package scalafunctionalkoans
 
-import functionalscalakoans.support.BlankValues._
-import functionalscalakoans.support.KoanSuite
+import scalafunctionalkoans.support.BlankValues._
+import scalafunctionalkoans.support.KoanSuite
 
 /*
 VAL, IT'S A QUESTION OF VALUES

@@ -1,4 +1,4 @@
-addCommandAlias("namaste", "~testOnly functionalscalakoans.Koans")
+addCommandAlias("namaste", "~testOnly scalafunctionalkoans.Koans")
 
 lazy val root = (project in file("."))
   .settings(

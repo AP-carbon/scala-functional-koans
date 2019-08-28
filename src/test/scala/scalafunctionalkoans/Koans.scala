@@ -1,6 +1,6 @@
-package functionalscalakoans
+package scalafunctionalkoans
 
-import functionalscalakoans.support.KoanSuite
+import scalafunctionalkoans.support.KoanSuite
 import org.scalatest._
 
 import scala.collection.immutable

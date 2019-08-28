@@ -1,7 +1,7 @@
-package functionalscalakoans.excluded
+package scalafunctionalkoans.excluded
 
-import functionalscalakoans.support.KoanSuite
-import functionalscalakoans.support.BlankValues._
+import scalafunctionalkoans.support.KoanSuite
+import scalafunctionalkoans.support.BlankValues._
 
 class AboutForDesugaring extends KoanSuite {
 

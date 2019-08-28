@@ -1,4 +1,4 @@
-package functionalscalakoans.support
+package scalafunctionalkoans.support
 
 import org.scalatest._
 import org.scalatest.events.{Event, TestFailed, TestPending, TestSucceeded}
