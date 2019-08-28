@@ -1,6 +1,6 @@
 # Scala Functional Koans
 
-Learning about basic Scala using functional style
+Learning about basic idiomatic Scala using functional style
 
 ## Setup
 
