@@ -16,7 +16,7 @@ class AboutClasses extends KoanSuite {
 
   koan("`val` parameters in class definition define getter") {
     val instance = new ClassWithValParameter("name")
-    instance.name should be (__)
+    instance.name should be ("name")
   }
 
   // You can define a class with `var` parameter.
@@ -26,12 +26,12 @@ class AboutClasses extends KoanSuite {
   koan("`var` parameters in class definition define getter and setter") {
     val instance = new ClassWithVarParameter("description")
 
-    instance.description should be (__)
+    instance.description should be ("description")
 
     // DANGER SIDE EFFECT (changing state of object)
     instance.description = "new description"
 
-    instance.description should be (__)
+    instance.description should be ("new description")
   }
 
   // You can just define a parameter for constructing an instance
@@ -52,9 +52,9 @@ class AboutClasses extends KoanSuite {
   koan("You also implement an immutable class with calculated getter") {
     val person = new Person("Paul", "Simpson")
 
-    person.firstName should be (__)
-    person.lastName should be (__)
-    person.fullName should be (__)
+    person.firstName should be ("Paul")
+    person.lastName should be ("Simpson")
+    person.fullName should be ("Paul Simpson")
   }
 
   // MUTABLE CLASS IS OFTEN A BAD SMELL
@@ -75,11 +75,11 @@ class AboutClasses extends KoanSuite {
   koan("You can also implement a mutable class (though not functional style but object style)") {
     val counter = new Counter(1)
 
-    counter.current should be (__)
+    counter.current should be (1)
 
     // DANGER SIDE EFFECT (changing state of object)
     counter.inc()
 
-    counter.current should be (__)
+    counter.current should be (2)
   }
 }

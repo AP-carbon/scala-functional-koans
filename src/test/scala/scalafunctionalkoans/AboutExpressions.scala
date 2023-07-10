@@ -33,7 +33,7 @@ class AboutExpressions extends KoanSuite {
       "Hello " + name + "!"
     }
 
-    hello should be (__)
+    hello should be ("Hello Paul!")
   }
 
   koan("if is an expression") {
@@ -42,7 +42,7 @@ class AboutExpressions extends KoanSuite {
     // An if expression
     val weather = if (temp > 14) "Warm" else "Cold"
 
-    weather should be (__)
+    weather should be ("Warm")
   }
 
   koan("match is an expression") {
@@ -55,7 +55,7 @@ class AboutExpressions extends KoanSuite {
       case 3 => "Good"
     }
 
-    grade should be (__)
+    grade should be ("Good")
   }
 
   koan("try catch is an expression") {
@@ -76,8 +76,8 @@ class AboutExpressions extends KoanSuite {
       case ex: RuntimeException => "Nooo!" // value in case of any exception
     }
 
-    success should be (__)
-    failure should be (__)
+    success should be ("Wow!")
+    failure should be ("Nooo!")
   }
 
   koan("Even for is an expression") {
@@ -88,13 +88,13 @@ class AboutExpressions extends KoanSuite {
     // And now we get a list of greetings matching the names
     val greetings = for (name <- names) yield "Hello " + name + "!"
 
-    greetings should be (Seq(__, __, __))
+    greetings should be (Seq("Hello Paul!", "Hello Peter!", "Hello Mary!"))
   }
 
   koan("Evaluation of a method (or function) is always an expression") {
     def max(a: Int, b: Int): Int = if (a < b) b else a
 
-    max(5, 6) should be (__)
+    max(5, 6) should be (6)
   }
 
   koan("Expressions can be combined to form expressions without even using var") {
@@ -109,6 +109,6 @@ class AboutExpressions extends KoanSuite {
       if (adjustedTemp > 14) "Warm" else "Cold"
     }
 
-    weathers should be (Seq(__, __, __))
+    weathers should be (Seq("Cold", "Warm", "Warm"))
   }
 }
