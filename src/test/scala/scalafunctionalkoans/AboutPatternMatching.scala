@@ -69,7 +69,7 @@ class AboutPatternMatching extends KoanSuite {
 
     def label(animalAndQuantity: (String, Int)) = animalAndQuantity match {
       case ("dog", 1) => "One dog"
-      case ("cat", quantity) => quantity + " cats" // `quantity` is a `val` that will be assigned the second entry of matching tuple.
+      case ("cat", quantity) =>  s"$quantity cats" // `quantity` is a `val` that will be assigned the second entry of matching tuple.
       case ("fish", 3) => "Three fishes"
       case _ => "Other"
     }
@@ -83,7 +83,7 @@ class AboutPatternMatching extends KoanSuite {
       case ("dog", 1) => "One dog"
 
       case ("cat", 1) => "One cat exactly"
-      case ("cat", quantity) if (quantity < 10) => quantity + " cats"
+      case ("cat", quantity) if (quantity < 10) => s"$quantity cats"
       case ("cat", _) => "Too many cats"
 
       case ("fish", 3) => "Three fishes"

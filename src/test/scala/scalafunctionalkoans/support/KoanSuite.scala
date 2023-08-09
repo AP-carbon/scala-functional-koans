@@ -4,8 +4,10 @@ import org.scalatest._
 import org.scalatest.events.{Event, TestFailed, TestPending, TestSucceeded}
 
 import scala.language.reflectiveCalls
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers
 
-trait KoanSuite extends FunSuite with CancelAfterFailure with Matchers {
+trait KoanSuite extends AnyFunSuite with CancelAfterFailure with Matchers {
   override def runTests(testName: Option[String], args: Args): Status = {
     if (testName == null) throw new NullPointerException("testName was null")
     if (args.reporter == null) throw new NullPointerException("reporter was null")
@@ -23,7 +25,7 @@ trait KoanSuite extends FunSuite with CancelAfterFailure with Matchers {
         val suiteName: String
       }
 
-      def stopTests(e: HasTextAndName) {
+      def stopTests(e: HasTextAndName): Unit= {
         note("")
         note("*****************************************")
         note("")

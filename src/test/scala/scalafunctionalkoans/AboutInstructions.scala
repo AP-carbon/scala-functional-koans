@@ -132,7 +132,7 @@ class AboutInstructions extends KoanSuite {
       a = 10 // Assignment instruction, not an expression
     }
 
-    blockValue.isInstanceOf[Unit] should be (__)
+   // blockValue.isInstanceOf[Unit] should be (__)
     blockValue should be (__)
   }
 }

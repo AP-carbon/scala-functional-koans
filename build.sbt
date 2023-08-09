@@ -5,11 +5,11 @@ lazy val root = (project in file("."))
     name := "scala-functional-koans",
     version := "0.1",
 
-    scalaVersion := "2.11.12",
+    scalaVersion := "2.13.7",
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature"),
 
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.0.5" % Test
+      "org.scalatest" %% "scalatest" % "3.2.9" % Test
     ),
 
     test / traceLevel := -1,
