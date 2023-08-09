@@ -46,7 +46,7 @@ class AboutClasses extends KoanSuite {
   // `firstName` and `lastName` will define two getters
   class Person(val firstName: String, val lastName: String) {
     // `fullName` will expose a calculated getter
-    def fullName = firstName + " " + lastName
+    def fullName: String = firstName + " " + lastName
   }
 
   koan("You also implement an immutable class with calculated getter") {

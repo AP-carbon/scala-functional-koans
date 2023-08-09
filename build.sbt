@@ -5,7 +5,7 @@ lazy val root = (project in file("."))
     name := "scala-functional-koans",
     version := "0.1",
 
-    scalaVersion := "2.13.7",
+    scalaVersion := "3.1.0",
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature"),
 
     libraryDependencies ++= Seq(

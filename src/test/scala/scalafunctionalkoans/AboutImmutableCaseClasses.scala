@@ -146,7 +146,7 @@ class AboutImmutableCaseClasses extends KoanSuite {
   koan("Case classes can be disassembled to their constituent parts as a tuple") {
     val p1 = Person("Fred", "Jones", 23, "111-22-3333")
 
-    val parts = Person.unapply(p1).get // this seems weird, but it's critical to other features of Scala
+    val parts = Person.unapply(p1) // this seems weird, but it's critical to other features of Scala
 
     parts._1 should be (__)
     parts._2 should be (__)
